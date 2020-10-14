@@ -1,0 +1,70 @@
+# Useful aliase and commands to be loaded by zshrc
+# Assumes oh-my-zsh is already installed.
+#
+# Usage:
+#   source aliases
+###################################################
+
+
+###################################################
+# Switches to a new branch
+#
+# Usage:
+#  git_new_clean_branch <name>
+#  git_new_clean_branch <name> <start point>
+# Examples:
+#  git_new_clean_branch feature/my-feature
+#  git_new_clean_branch my-feature origin/main
+###################################################
+function git_new_clean_branch() {
+  [ -z "$1" ] && echo "Error: No branch name given!" && exit
+
+  branch=${1}
+  start_point=${2:-origin/main}
+
+  cmd="git switch -c $branch $start_point"
+  echo "Running cmd: $cmd"
+  $cmd
+}
+
+###################################################
+# Open the browser to a Google search
+#
+# Usage:
+#  google_search something
+#  git_new_clean_branch <name> <start point>
+# Examples:
+#  git_new_clean_branch feature/my-feature
+#  git_new_clean_branch my-feature origin/main
+#
+###################################################
+function google_search() {
+  url="https://www.google.com/search?q=$*"
+  open_command $url
+}
+
+###################################################
+# Starts begining of the day checkups.
+###################################################
+function start_my_day {
+  SITES="https://mail.google.com";
+  echo "Good morning $USER\!"
+
+  open_command -a "Google Chrome" $SITES &>/dev/null &
+}
+
+# VScode
+alias c.='code .'
+
+# zsh
+alias zshconfig="code ~/.zshrc"
+
+# Node
+alias nb='npm run build'
+alias ni='npm install'
+alias ns='npm start'
+alias nt='npm test'
+alias nr='npm run'
+
+# Ruby
+alias bi='bundle install'
