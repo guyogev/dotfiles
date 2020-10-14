@@ -1,0 +1,22 @@
+# Useful aliase to be loaded by zshrc.
+# Assumes oh-my-zsh is already installed.
+#
+# Usage:
+#   source aliases
+###################################################
+
+# VScode
+alias c.='code .'
+
+# zsh
+alias zshconfig="code ~/.zshrc"
+
+# Node
+alias nb='npm run build'
+alias ni='npm install'
+alias ns='npm start'
+alias nt='npm test'
+alias nr='npm run'
+
+# Ruby
+alias bi='bundle install'
