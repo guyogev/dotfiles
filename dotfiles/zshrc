@@ -6,7 +6,7 @@ export ZSH="/Users/gyogev/.oh-my-zsh"
 
 # Zsh config
 ZSH_THEME="muse" # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-plugins=(git history asdf) # https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
+plugins=(git history asdf npm) # https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
 source $ZSH/oh-my-zsh.sh
 
 # Load aliases

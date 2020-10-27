@@ -12,7 +12,9 @@
 
 DOTFILES_TARGET_FOLDER=${1:-/tmp/dotfiles}
 
-# ./scripts/install.sh
-
-# # copy configurations:
+# copy configurations:
 ./scripts/symlink_dotfiles.sh $DOTFILES_TARGET_FOLDER
+
+./scripts/install.sh
+./scripts/brew.sh
+./scripts/node.sh
