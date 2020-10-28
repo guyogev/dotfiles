@@ -1,26 +1,16 @@
 #!/bin/bash
 ###################################################
-# Creates symlinks for configs into given <folder>.
-# If file already exist, back it up to <folder>/BACKUP_FOLDER
+# Symlinks files from dotfiles/ into given <folder>.
+# If file already exist, back it up to <folder>/<timestamp>/dotfiles-backup
 #
 # Usage:
-#  ./scripts/copy_dot_files.sh <path>
+#  ./scripts/dotfiles.sh <path>
 # Example:
-#  ./scripts/copy_dot_files.sh ~
+#  ./scripts/dotfiles.sh ~
 ###################################################
 set -e
 
-function backup() {
-  if test -f "$1"; then
-    echo "backup $1 into $2"
-    cp $1 $2
-
-  fi
-}
-
-function symlink() {
-  ln -sf $1 $2
-}
+. ./scripts/_utils.sh
 
 [ -z "$1" ] && echo "Error: No traget folder provided!" && exit
 
