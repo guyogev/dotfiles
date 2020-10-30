@@ -16,5 +16,6 @@ DOTFILES_TARGET_FOLDER=${1:-/tmp/dotfiles}
 ./scripts/dotfiles.sh $DOTFILES_TARGET_FOLDER
 
 ./scripts/install.sh
+./scripts/macos.sh
 ./scripts/brew.sh
 ./scripts/node.sh
