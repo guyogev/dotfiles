@@ -1,11 +1,11 @@
 [user]
   name = Guy Yogev
-  email = guyogev@google.com
+  email = guyogev@gmail.com
 [branch]
   # autosetuprebase = always
 [alias]
   log-tree = "log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 [core]
-	editor = vi
+  editor = vi
 [push]
-	default = current
+  default = current
