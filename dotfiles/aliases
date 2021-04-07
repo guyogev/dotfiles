@@ -15,8 +15,23 @@ alias zshconfig="code ~/.zshrc"
 alias nb='npm run build'
 alias ni='npm install'
 alias ns='npm start'
+alias nsd='npm start:dev'
 alias nt='npm test'
 alias nr='npm run'
 
 # Ruby
 alias bi='bundle install'
+
+# Web
+alias gmail='open_command https://mail.google.com/mail/u/1/'
+alias fox-log='open_command "https://papertrailapp.com/dashboard"'
+
+# FoxInGreen
+alias fox-be='cd ~/Development/foxingreen/server'
+alias gh-pr='open_command https://github.com/foxin-green/server/pulls'
+alias gh-be-issues='open_command https://github.com/foxin-green/server/issues'
+alias gh-be-code='open_command https://github.com/foxin-green/server'
+alias gh-be-my-bugs='open_command "https://github.com/foxin-green/server/issues?q=assignee%3Aguy-foxingreen+is%3Aopen"'
+alias gh-fe-issues='open_command https://github.com/foxin-green/frontend/issues'
+alias gh-fe-code='open_command https://github.com/foxin-green/frontend'
+alias gh-fe-my-bugs='open_command "https://github.com/foxin-green/frontend/issues?q=assignee%3Aguy-foxingreen+is%3Aopen"'

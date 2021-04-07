@@ -26,7 +26,6 @@ do
     file=$(basename $f)
     target_file="$TARGET_DIR/.$file"
     backup_file="$BACKUP_FOLDER/.$file"
-
     backup $target_file $backup_file
     symlink $f $target_file
   fi

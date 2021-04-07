@@ -47,7 +47,7 @@ function google_search() {
 # Starts beginning of the day checkups.
 ###################################################
 function start_my_day {
-  SITES="https://mail.google.com";
+  SITES="https://mail.google.com/mail/u/1 https://github.com/foxin-green/server";
   echo "Good morning $USER\!"
 
   open_command -a "Google Chrome" $SITES &>/dev/null &
