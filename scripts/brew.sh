@@ -7,6 +7,7 @@
 ###################################################
 
 brew cask install iterm2
+brew install zsh-syntax-highlighting
 brew install gnupg
 brew install coreutils
 brew install gpg

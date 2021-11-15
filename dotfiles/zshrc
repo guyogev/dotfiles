@@ -9,8 +9,10 @@ ZSH_THEME="agnoster" # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 plugins=(git history asdf npm) # https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
 
 ZSH_DISABLE_COMPFIX=true
+DEFAULT_USER=$(whoami)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Load aliases
 source ~/.aliases
