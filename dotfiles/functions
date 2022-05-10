@@ -52,3 +52,17 @@ function start_my_day {
 
   open_command -a "Google Chrome" $SITES &>/dev/null &
 }
+
+function my_ip {
+  curl ifconfig.me/ip
+  echo
+}
+
+function pid_on_port {
+  arr=($(lsof -n -i :$1 | grep LISTEN))
+  echo ${arr[2]}
+}
+
+function kill_pid {
+  kill -9 $1
+}

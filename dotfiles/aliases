@@ -1,4 +1,4 @@
-# Useful aliase to be loaded by zshrc.
+# Useful aliases to be loaded by zshrc.
 # Assumes oh-my-zsh is already installed.
 #
 # Usage:
@@ -24,26 +24,3 @@ alias bi='bundle install'
 
 # Web
 alias gmail='open_command https://mail.google.com/mail/u/1/'
-alias fox-log='open_command "https://papertrailapp.com/dashboard"'
-alias fox-nr='open_command "https://one.newrelic.com/launcher/dashboards.launcher?pane=eyJuZXJkbGV0SWQiOiJkYXNoYm9hcmRzLmRhc2hib2FyZCIsImVudGl0eUlkIjoiTWprME56RXlOWHhXU1ZwOFJFRlRTRUpQUVZKRWZERTFNakF4T1RBIiwidXNlRGVmYXVsdFRpbWVSYW5nZSI6ZmFsc2UsInNlbGVjdGVkUGFnZSI6Ik1qazBOekV5Tlh4V1NWcDhSRUZUU0VKUFFWSkVmREUxTWpBeE9UQSIsImlzVGVtcGxhdGVFbXB0eSI6ZmFsc2UsImVkaXRNb2RlIjpmYWxzZSwiaXNTYXZpbmdFZGl0Q2hhbmdlcyI6ZmFsc2V9&platform[accountId]=2947125&platform[$isFallbackTimeRange]=true"'
-alias fox-db='open_command "https://cloud.mongodb.com/v2#/org/5f7488ea1d88f70a7ef38aef/projects"'
-alias fox-aws='open_command "https://267979339802.signin.aws.amazon.com/console"'
-
-# FoxInGreen
-alias fox-be='cd ~/Development/foxingreen/server'
-alias gh-pr='open_command https://github.com/foxin-green/server/pulls'
-alias gh-backlog='open_command "https://github.com/orgs/foxin-green/projects/2/views/6"'
-alias gh-be-issues='open_command https://github.com/foxin-green/server/issues'
-alias gh-be-code='open_command https://github.com/foxin-green/server'
-alias gh-be-my-bugs='open_command "https://github.com/foxin-green/server/issues?q=assignee%3Aguy-foxingreen+is%3Aopen"'
-alias gh-fe-issues='open_command https://github.com/foxin-green/frontend/issues'
-alias gh-fe-code='open_command https://github.com/foxin-green/frontend'
-alias gh-fe-my-bugs='open_command "https://github.com/foxin-green/frontend/issues?q=assignee%3Aguy-foxingreen+is%3Aopen"'
-
-
-function fox-git-feature {
-  ./scripts/git.sh branch feature "issue#$1"
-}
-function fox-git-hotfix {
-  ./scripts/git.sh branch hot-fix "issue#$1"
-}

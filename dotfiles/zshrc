@@ -24,6 +24,18 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='code'
 fi
+
+# Jekyll Ruby
+export SDKROOT=$(xcrun --show-sdk-path)
+
+
+# React Native
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 ###-begin-pm2-completion-###
 ### credits to npm for the completion file model
 #
